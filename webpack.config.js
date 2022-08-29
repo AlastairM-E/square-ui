@@ -10,7 +10,7 @@ module.exports = {
   },
 
   devServer: {
-    port: 8080,
+    port: 3000,
     historyApiFallback: true,
   },
 
@@ -42,7 +42,9 @@ module.exports = {
       name: "square_ui",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        './lib': './src/components/index'
+      },
       shared: {
         ...deps,
         react: {
