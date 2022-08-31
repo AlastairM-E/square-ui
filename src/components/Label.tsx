@@ -1,9 +1,11 @@
 import React from "react";
 
-type InputProps = React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>;
+type LabelProps = 
+    React.DetailedHTMLProps<React.LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement>
+    | { children: string; };
 
-function Input(props: InputProps) {
-    return <label {...props} />
+function Label(props: LabelProps) {
+    return <label {...props}>{props.children}</label>
 }
 
-export default Input;
+export default Label;

@@ -7,6 +7,7 @@ import Input from './Input';
 import Subtitle from './Subtitle';
 import Container from './Container';
 import Link from './Link';
+import Label from './Label';
 
 export {
     Button,
@@ -15,5 +16,6 @@ export {
     Input,
     Subtitle,
     Container,
-    Link
+    Link,
+    Label
 }
