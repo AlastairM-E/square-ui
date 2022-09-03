@@ -12,9 +12,5 @@ test("Loading text should not return any text", () => {
   expect(screen.queryByText("Hello world")).toBeNull();
 });
 
-test('x', () => {
-  expect(false).toBe(true);
-})
-
 export default {};
 //css issue with jest --> also read in more detail (https://babeljs.io/docs/en/config-files)
