@@ -38,6 +38,8 @@ jobs:
         run: npm run test:unit
       - name: Webpack Build
         run: npm run build
+      - name: Run End 2 End tests
+        run: npm run cy:run
       - name: Setup Pages
         uses: actions/configure-pages@v1
       - name: Upload artifact
